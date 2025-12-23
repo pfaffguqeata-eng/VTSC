@@ -53,7 +53,7 @@ python train.py
 4.1 Evaluation
 
 ```bash
-python scripts/test_codec.py
+python test_codec.py
 ```
 
 5. Replacing the Downstream Task Network (Important)
@@ -64,11 +64,12 @@ In train.py and test_codec.py, the default import is:
 
 
 
-Step 1: Define Your Network in models/model_t.py
+Step 1: Define Your Network in model_t/*.py
 
 Step 2: Modify the Import Statement
 
-Replace the MFCM4 in following line in scripts/train.py and scripts/test_codec.py:
+Replace the MFCM4 in following line in train.py and test_codec.py:
+
 ```bash
 from models.model_t import MFCM4, coding_feat_epoch_entropy_2
 ```
