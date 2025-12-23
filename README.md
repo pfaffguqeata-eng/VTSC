@@ -1,13 +1,3 @@
-
-```
-pip install -r requirements.txt 
-```
-
-python train.py
-python test.py
-
-替换train.py和test_codec.py中的from model_t import MFCM4, coding_feat_epoch_entropy_2中的mfcm4为你自己的下游任务网络。
-
 # VTSC
 
 This project is based on the **the VTSC framework** , which supports semantic feature encoding and allows flexible replacement with **custom downstream task networks**
